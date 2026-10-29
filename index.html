@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kiko's · Restaurant &amp; Bar Cocktails · Lloret de Mar</title>
+<meta name="description" id="metaDesc" content="Kiko's, bar restaurante y coctelería en primera línea del paseo de Lloret de Mar (Passeig d'Agustí Font, 6). Cócteles de litro, cafés helados, brunch, paella, nachos y partidos en pantalla grande. Todos los días de 10:00 a 1:30.">
+<meta name="theme-color" content="#0B0A16">
+<meta property="og:title" content="Kiko's · Lloret de Mar">
+<meta property="og:description" content="Live sports, drink &amp; chill. En primera línea del paseo de Lloret, de 10:00 a 1:30.">
+<meta property="og:image" content="assets/img/fachada.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0A16'/%3E%3Cpath d='M32 8v10M32 18 16 34l16 18 16-18zM16 34h32M32 18v34' fill='none' stroke='%23E39B55' stroke-width='3' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='38' r='5' fill='%23FFC27A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,300..800&family=Kaushan+Script&family=Antonio:wght@300..700&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ ENTRADA · la lámpara de cobre ============ -->
+<div class="lamp" id="lamp" aria-hidden="true">
+  <svg class="lamp__svg" viewBox="0 0 200 300">
+    <defs>
+      <radialGradient id="bulbGlow"><stop offset="0" stop-color="#FFE3B0"/><stop offset=".35" stop-color="#FFC27A" stop-opacity=".9"/><stop offset="1" stop-color="#E39B55" stop-opacity="0"/></radialGradient>
+    </defs>
+    <circle class="lamp__halo" cx="100" cy="196" r="90" fill="url(#bulbGlow)"/>
+    <path class="lamp__line" d="M100 0V96"/>
+    <path class="lamp__line" d="M100 96 52 160M100 96 78 178M100 96 122 178M100 96 148 160M100 96 100 150"/>
+    <path class="lamp__line" d="M52 160 78 178 122 178 148 160M52 160 100 150 148 160"/>
+    <path class="lamp__line" d="M52 160 100 262M78 178 100 262M122 178 100 262M148 160 100 262"/>
+    <ellipse class="lamp__bulb" cx="100" cy="196" rx="13" ry="17"/>
+  </svg>
+  <p class="lamp__name">Kiko's</p>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="logo" href="#litro" aria-label="Kiko's, inicio" data-i18n-attr="aria-label:nav.home">
+    <span class="logo__k">Kiko's</span>
+    <span class="logo__s">Lloret de Mar</span>
+  </a>
+  <nav class="nav__links" aria-label="Secciones">
+    <a href="#litro" data-i18n="nav.litro">El litro</a>
+    <a href="#casa" data-i18n="nav.casa">La casa</a>
+    <a href="#carta" data-i18n="nav.carta">Carta</a>
+    <a href="#cromos" data-i18n="nav.cromos">Cromos</a>
+    <a href="#partidos" data-i18n="nav.partidos">Partidos</a>
+    <a href="#visita" data-i18n="nav.visita">Visita</a>
+  </nav>
+  <div class="lang" data-lang-switch></div>
+  <a class="nav__call" href="tel:+34674985961"><i class="ph-bold ph-phone"></i><span>674 98 59 61</span></a>
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menú" data-i18n-attr="aria-label:nav.menu"><span></span><span></span></button>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#litro" data-i18n="nav.litro">El litro</a><a href="#casa" data-i18n="nav.casa">La casa</a><a href="#carta" data-i18n="nav.carta">Carta</a><a href="#cromos" data-i18n="nav.cromos">Cromos</a><a href="#partidos" data-i18n="nav.partidos">Partidos</a><a href="#visita" data-i18n="nav.visita">Visita</a>
+  <a class="drawer__call" href="tel:+34674985961">674 98 59 61</a>
+  <div class="langs drawer__langs" data-lang-list></div>
+</div>
+
+<main id="top">
+
+  <!-- ============ PORTADA · EL LITRO ============ -->
+  <section class="hero" id="litro">
+    <canvas class="hero__bg" id="heroBg" aria-hidden="true"></canvas>
+    <div class="hero__type">
+      <p class="hero__script hero__script--a" aria-hidden="true">Restaurant</p>
+      <h1 class="hero__title" id="heroTitle"><span class="sr-only" data-i18n="hero.h1">Kiko's, restaurant y bar de cócteles en Lloret de Mar</span><span class="hero__word" aria-hidden="true"><span>K</span><span>I</span><span>K</span><span>O</span><span>’</span><span>S</span></span></h1>
+      <p class="hero__script hero__script--b" aria-hidden="true">Bar Cocktails</p>
+    </div>
+    <canvas class="hero__gl" id="heroGl" aria-hidden="true"></canvas>
+    <figure class="hero__fallback" aria-hidden="true"><img src="assets/img/cocteles.jpg" alt=""></figure>
+
+    <div class="hero__ui">
+      <div class="hero__top">
+        <p class="kicker" data-i18n="hero.kicker">Primera línea · Passeig d’Agustí Font, 6</p>
+        <p class="live" data-live><i></i><span data-live-text>Todos los días · 10:00 – 1:30</span></p>
+      </div>
+      <div class="hero__bottom">
+        <p class="hero__lead" data-i18n="hero.lead">En el paseo de Lloret, con la playa delante. Café helado a las diez, paella a mediodía, el partido en pantalla grande y un litro de cóctel hasta la 1:30.</p>
+        <div class="litro">
+          <p class="litro__price"><b>1&nbsp;L</b><span data-i18n="hero.of">de cóctel</span><em>9&nbsp;€</em></p>
+          <div class="litro__chips" id="chips" role="radiogroup" aria-label="Color del cóctel" data-i18n-attr="aria-label:hero.flavors">
+            <button type="button" role="radio" aria-checked="true" data-flavor="0" style="--c1:#D6261E;--c2:#FFB02E" data-i18n="hero.f0">Naranja y granadina</button>
+            <button type="button" role="radio" aria-checked="false" data-flavor="1" style="--c1:#7DB33A;--c2:#E6F2B8" data-i18n="hero.f1">Menta y lima</button>
+            <button type="button" role="radio" aria-checked="false" data-flavor="2" style="--c1:#E9DCC3;--c2:#FFF8EA" data-i18n="hero.f2">Coco y piña</button>
+            <button type="button" role="radio" aria-checked="false" data-flavor="3" style="--c1:#7A0F3A;--c2:#E2386A" data-i18n="hero.f3">Frutos rojos</button>
+          </div>
+          <p class="litro__hint"><i class="ph-bold ph-hand-grabbing"></i><span data-i18n="hero.hint">Arrastra el vaso para agitarlo</span></p>
+        </div>
+      </div>
+    </div>
+    <a class="hero__down" href="#casa" aria-label="Bajar a La casa" data-i18n-attr="aria-label:hero.down"><span>Live sports · Drink &amp; chill</span><i class="ph-bold ph-arrow-down"></i></a>
+  </section>
+
+  <!-- ============ LA CASA ============ -->
+  <section class="casa" id="casa">
+    <div class="wrap casa__grid">
+      <div class="casa__copy">
+        <p class="kicker" data-i18n="casa.kicker">La casa</p>
+        <h2 class="casa__statement" data-words data-i18n="casa.statement">Un bar en primera línea, con la playa delante, las palmeras del paseo y el partido en pantalla grande.</h2>
+        <p class="lead fade" data-i18n="casa.lead">Kiko’s abre a las diez con cafés helados y brunch, sirve paella, ensaladas y nachos a mediodía y alarga la noche con cócteles en la terraza. Restaurant y bar de cócteles en el Passeig d’Agustí Font de Lloret de Mar.</p>
+      </div>
+      <figure class="casa__fachada reveal">
+        <img src="assets/img/fachada.jpg" data-i18n-attr="alt:casa.altFachada" alt="Fachada de Kiko's de noche: rótulo iluminado «Restaurant · KIKO'S · Bar Cocktails», pantallas con fútbol y jardineras de Lloret de Mar" loading="lazy">
+        <figcaption data-i18n="casa.capFachada">La fachada, de noche</figcaption>
+      </figure>
+    </div>
+
+    <dl class="wrap stats">
+      <div class="fade"><dt>Google</dt><dd><b data-i18n="st.rating">4,6</b><span data-i18n="st.reviews">★ · 84 reseñas</span></dd></div>
+      <div class="fade"><dt data-i18n="st.hours">Horario</dt><dd><b>10:00–1:30</b><span data-i18n="st.daily">todos los días</span></dd></div>
+      <div class="fade"><dt data-i18n="st.price">Precio</dt><dd><b>10–20 €</b><span data-i18n="st.pp">por persona</span></dd></div>
+      <div class="fade"><dt data-i18n="st.litre">El litro</dt><dd><b>9 €</b><span data-i18n="st.litreSub">cóctel de 1 L</span></dd></div>
+    </dl>
+
+    <div class="wrap casa__trio">
+      <figure class="reveal casa__p1"><img src="assets/img/paseo.jpg" data-i18n-attr="alt:casa.altPaseo" alt="Vista desde la terraza: jardinera, palmeras del paseo y el mar al fondo" loading="lazy"><figcaption data-i18n="casa.capPaseo">Desde la terraza</figcaption></figure>
+      <figure class="reveal casa__p2"><img src="assets/img/barra.jpg" data-i18n-attr="alt:casa.altBarra" alt="Interior de Kiko's: lámparas geométricas de cobre, luz violeta, barra y pantalla con fútbol" loading="lazy"><figcaption data-i18n="casa.capBarra">Las lámparas de cobre</figcaption></figure>
+      <figure class="reveal casa__p3"><img src="assets/img/mojito.jpg" data-i18n-attr="alt:casa.altNoche" alt="Cóctel con menta y lima en una mesa de la terraza al anochecer, con una lámpara de mesa" loading="lazy"><figcaption data-i18n="casa.capNoche">Al anochecer</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ CARTA · POSAVASOS ============ -->
+  <section class="carta" id="carta">
+    <header class="wrap sec-head">
+      <p class="kicker" data-i18n="carta.kicker">La carta</p>
+      <h2 class="h2" data-i18n="carta.h2">Cuatro <em>posavasos</em> sobre la mesa</h2>
+      <p class="lead" data-i18n="carta.lead">Arrástralos por la mesa y dales la vuelta: detrás está lo que se pide en Kiko’s, del café de la mañana al último cóctel.</p>
+    </header>
+
+    <div class="mesa" id="mesa">
+      <i class="mesa__ring" style="left:8%;top:62%"></i>
+      <i class="mesa__ring" style="left:58%;top:12%;--s:.8"></i>
+      <i class="mesa__ring" style="left:84%;top:70%;--s:1.15"></i>
+
+      <article class="coaster coaster--manana" data-name="co.m.title" data-x=".17" data-y=".3" data-r="-7" tabindex="0" role="button" aria-pressed="false">
+        <div class="coaster__in">
+          <div class="coaster__face coaster__front">
+            <svg class="coaster__art" viewBox="0 0 120 120" aria-hidden="true">
+              <path d="M38 34h44l-6 64H44z" fill="#F7E7CF" stroke="#2B2233" stroke-width="2.4" stroke-linejoin="round"/>
+              <path d="M41 56h38l-4 40H45z" fill="#B97A45"/>
+              <path d="M41 56c8 6 14-6 22 2 6 5 11-4 16-2" fill="none" stroke="#6E3C1C" stroke-width="2.4"/>
+              <path d="M44 80c6-4 10 4 16 0s10 3 15-1" fill="none" stroke="#E7C38E" stroke-width="2"/>
+              <g transform="rotate(-24 70 30)"><rect x="64" y="6" width="8" height="58" rx="3" fill="#fff" stroke="#2B2233" stroke-width="2"/><path d="M64 14h8M64 24h8M64 34h8M64 44h8M64 54h8" stroke="#E0413A" stroke-width="4"/></g>
+              <rect x="46" y="40" width="10" height="10" rx="2" fill="#fff" opacity=".7" transform="rotate(12 51 45)"/>
+            </svg>
+            <p class="coaster__title" data-i18n="co.m.title">Mañanas</p>
+            <p class="coaster__sub" data-i18n="co.m.sub">desde las 10:00</p>
+            <p class="coaster__sign">Kiko's</p>
+          </div>
+          <div class="coaster__face coaster__back">
+            <h3 data-i18n="co.m.h">Café y brunch</h3>
+            <ul>
+              <li><b data-i18n="co.m1">Café helado de caramelo</b></li>
+              <li><b data-i18n="co.m2">Strawberry iced</b><span data-i18n="co.m2s">con fresa</span></li>
+              <li><b data-i18n="co.m3">Tostada de aguacate</b><span data-i18n="co.m3s">huevo, cherry y rúcula</span></li>
+              <li><b data-i18n="co.m4">Bowl con granola</b><span data-i18n="co.m4s">plátano, fresas, arándanos y coco</span></li>
+              <li><b data-i18n="co.m5">Crepes dulces</b><span data-i18n="co.m5s">de chocolate</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="coaster coaster--cocina" data-name="co.k.title" data-x=".42" data-y=".62" data-r="5" tabindex="0" role="button" aria-pressed="false">
+        <div class="coaster__in">
+          <div class="coaster__face coaster__front">
+            <svg class="coaster__art" viewBox="0 0 120 120" aria-hidden="true">
+              <rect x="4" y="54" width="22" height="10" rx="5" fill="#2A2A30"/><rect x="94" y="54" width="22" height="10" rx="5" fill="#2A2A30"/>
+              <circle cx="60" cy="59" r="38" fill="#2A2A30"/>
+              <circle cx="60" cy="59" r="33" fill="#E9A93B"/>
+              <g fill="#F2C15A" opacity=".8"><circle cx="45" cy="48" r="2"/><circle cx="70" cy="44" r="2"/><circle cx="52" cy="72" r="2"/><circle cx="78" cy="66" r="2"/><circle cx="61" cy="58" r="2"/><circle cx="40" cy="64" r="2"/></g>
+              <g fill="none" stroke="#E2502F" stroke-width="5" stroke-linecap="round"><path d="M44 46c4-8 14-6 13 2"/><path d="M70 72c4-8 14-6 13 2"/><path d="M40 70c-2-8 8-12 12-5"/></g>
+              <g fill="#20202A"><ellipse cx="72" cy="47" rx="7" ry="4" transform="rotate(-30 72 47)"/><ellipse cx="55" cy="78" rx="7" ry="4" transform="rotate(20 55 78)"/></g>
+              <g fill="none" stroke="#F4EFE6" stroke-width="3"><circle cx="64" cy="61" r="5"/><circle cx="48" cy="58" r="4"/></g>
+              <path d="M78 52l14-6-4 14z" fill="#F5E04A" stroke="#C9B12B" stroke-width="1.5"/>
+            </svg>
+            <p class="coaster__title" data-i18n="co.k.title">Cocina</p>
+            <p class="coaster__sub" data-i18n="co.k.sub">mediodía y noche</p>
+            <p class="coaster__sign">Kiko's</p>
+          </div>
+          <div class="coaster__face coaster__back">
+            <h3 data-i18n="co.k.h">Cocina</h3>
+            <ul>
+              <li><b data-i18n="co.k1">Paella marinera</b><span data-i18n="co.k1s">gambas, mejillones, almejas y calamar</span></li>
+              <li><b data-i18n="co.k2">Costillas BBQ</b><span data-i18n="co.k2s">con patatas fritas y ensalada</span></li>
+              <li><b data-i18n="co.k3">Nachos</b><span data-i18n="co.k3s">queso fundido, pico de gallo y guacamole</span></li>
+              <li><b data-i18n="co.k4">Ensaladas</b><span data-i18n="co.k4s">de pollo o griega</span></li>
+              <li><b data-i18n="co.k6">Pizzas</b><span data-i18n="co.k6s">y bocadillos</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="coaster coaster--coctel" data-name="co.c.title" data-x=".66" data-y=".28" data-r="-4" tabindex="0" role="button" aria-pressed="false">
+        <div class="coaster__in">
+          <div class="coaster__face coaster__front">
+            <p class="coaster__big">1&nbsp;L</p>
+            <p class="coaster__badge">9 €</p>
+            <p class="coaster__script">Cocktails</p>
+            <p class="coaster__sub">drink &amp; chill</p>
+          </div>
+          <div class="coaster__face coaster__back">
+            <h3 data-i18n="co.c.h">Para beber</h3>
+            <ul>
+              <li><b data-i18n="co.c1">Cóctel de 1 litro</b><span class="price">9 €</span></li>
+              <li><b data-i18n="co.c2">Cócteles de la casa</b><span data-i18n="co.c2s">pregunta en barra</span></li>
+              <li><b data-i18n="co.c3">Chupitos</b><span data-i18n="co.c3s">para los goles</span></li>
+              <li><b data-i18n="co.c4">Cafés helados</b><span data-i18n="co.c4s">caramelo y fresa</span></li>
+              <li><b data-i18n="co.c5">Zumos y refrescos</b></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="coaster coaster--casa" data-name="co.h.title" data-x=".86" data-y=".64" data-r="9" tabindex="0" role="button" aria-pressed="false">
+        <div class="coaster__in">
+          <div class="coaster__face coaster__front">
+            <svg class="coaster__ball" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="26" fill="#F7F1E7" stroke="#1B1630" stroke-width="2.5"/><path d="M30 19l9 6.5-3.4 10.6H24.4L21 25.5z" fill="#1B1630"/><path d="M30 19V6M39 25.5l12-4M35.6 36.1l7.4 10.4M24.4 36.1 17 46.5M21 25.5l-12-4" stroke="#1B1630" stroke-width="2.5"/></svg>
+            <p class="coaster__script">Live sports</p>
+            <p class="coaster__sub" data-i18n="co.h.sub">en pantalla grande</p>
+            <p class="coaster__addr">Passeig d’Agustí Font, 6</p>
+          </div>
+          <div class="coaster__face coaster__back">
+            <h3 data-i18n="co.h.h">La casa</h3>
+            <ul>
+              <li><b data-i18n="co.h1">Todos los días</b><span data-i18n="co.h1s">de 10:00 a 1:30</span></li>
+              <li><b data-i18n="co.h2">Partidos</b><span data-i18n="co.h2s">en pantallas grandes</span></li>
+              <li><b data-i18n="co.h3">Terraza</b><span data-i18n="co.h3s">en primera línea de playa</span></li>
+              <li><b>10–20 €</b><span data-i18n="st.pp">por persona</span></li>
+              <li><b data-i18n="co.h5">Accesible</b><span data-i18n="co.h5s">en silla de ruedas</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="wrap carta__note"><i class="ph-bold ph-info"></i> <span data-i18n="carta.note">Carta orientativa: platos y bebidas que se ven en sus fotos y en las reseñas de Google. La carta completa y los precios, en el local.</span></p>
+  </section>
+
+  <!-- ============ CROMOS · FOTOS ============ -->
+  <section class="cromos" id="cromos">
+    <header class="wrap sec-head sec-head--dark">
+      <p class="kicker" data-i18n="cromos.kicker">Fotos</p>
+      <h2 class="h2" data-i18n="cromos.h2">El álbum de <em>cromos</em></h2>
+      <p class="lead" data-i18n="cromos.lead">Dieciséis cromos sacados de su Instagram y de las fotos de clientes en Google. Rasga el sobre y pásalos: cada uno que veas se pega en el álbum.</p>
+    </header>
+
+    <div class="cromos__stage" id="cromosStage">
+      <div class="sobre" id="sobre">
+        <div class="sobre__strip" id="sobreStrip">
+          <span class="sobre__tear"></span>
+          <button class="sobre__handle" id="sobreHandle" type="button" aria-label="Abrir el sobre de cromos" data-i18n-attr="aria-label:sobre.aria"><i class="ph-bold ph-arrow-right"></i></button>
+        </div>
+        <div class="sobre__body">
+          <p class="sobre__ed" data-i18n="sobre.ed">Edición Mundial 2026</p>
+          <p class="sobre__name">Kiko’s</p>
+          <p class="sobre__script">Lloret de Mar</p>
+          <p class="sobre__count"><b>16</b><span data-i18n="sobre.count">cromos</span></p>
+          <p class="sobre__hint" data-i18n="sobre.hint">Arrastra la tira para abrir</p>
+        </div>
+      </div>
+      <div class="deck" id="deck" aria-roledescription="carrusel" aria-label="Cromos de Kiko's" data-i18n-attr="aria-label:deck.aria"></div>
+      <div class="deck__ctrl" id="deckCtrl">
+        <button type="button" class="round" id="deckPrev" aria-label="Cromo anterior" data-i18n-attr="aria-label:deck.prev"><i class="ph-bold ph-arrow-left"></i></button>
+        <p class="deck__count" aria-live="polite"><b id="deckN">01</b> / 16</p>
+        <button type="button" class="round" id="deckNext" aria-label="Cromo siguiente" data-i18n-attr="aria-label:deck.next"><i class="ph-bold ph-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="wrap album">
+      <div class="album__head"><p class="album__t" data-i18n="album.t">Álbum <span>Kiko’s 2026</span></p><p class="album__n"><b id="albumN">0</b> / 16 <span data-i18n="album.n">pegados</span></p></div>
+      <div class="album__grid" id="albumGrid"></div>
+      <p class="album__done" id="albumDone" data-i18n="album.done">¡Álbum completo! Te esperamos en el paseo.</p>
+    </div>
+  </section>
+
+  <!-- ============ PARTIDOS · VÍDEOS ============ -->
+  <section class="partidos" id="partidos">
+    <header class="wrap sec-head sec-head--dark">
+      <p class="kicker" data-i18n="part.kicker">Vídeos · Mundial 2026</p>
+      <h2 class="h2" data-i18n="part.h2">Pasa el <em>balón</em></h2>
+      <p class="lead" data-i18n="part.lead">Así se vivieron los partidos en Kiko’s este verano. Tira del balón hacia atrás y suéltalo: el vídeo del jugador que toque sale en la pantalla. También puedes tocar a los jugadores.</p>
+    </header>
+
+    <div class="wrap partidos__grid">
+      <div class="campo" id="campo">
+        <svg class="campo__lines" viewBox="0 0 1050 680" preserveAspectRatio="none" aria-hidden="true">
+          <g fill="none" stroke="rgba(255,255,255,.55)" stroke-width="3">
+            <rect x="12" y="12" width="1026" height="656"/>
+            <path d="M525 12v656"/><circle cx="525" cy="340" r="92"/><circle cx="525" cy="340" r="4" fill="rgba(255,255,255,.7)"/>
+            <rect x="12" y="148" width="165" height="384"/><rect x="12" y="248" width="55" height="184"/>
+            <rect x="873" y="148" width="165" height="384"/><rect x="983" y="248" width="55" height="184"/>
+            <path d="M177 266a92 92 0 0 1 0 148M873 266a92 92 0 0 0 0 148"/>
+            <circle cx="122" cy="340" r="4" fill="rgba(255,255,255,.7)"/><circle cx="928" cy="340" r="4" fill="rgba(255,255,255,.7)"/>
+            <path d="M12 300H0v80h12M1038 300h12v80h-12" stroke-width="5"/>
+          </g>
+        </svg>
+        <div class="campo__players" id="players"></div>
+        <svg class="campo__aim" id="aim" aria-hidden="true"><line id="aimLine" x1="0" y1="0" x2="0" y2="0"/><circle id="aimDot" r="0"/></svg>
+        <button class="balon" id="balon" type="button" aria-label="Balón: arrástralo hacia atrás y suéltalo para chutar" data-i18n-attr="aria-label:ball.aria">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27" fill="#F7F1E7" stroke="#1B1630" stroke-width="2.5"/><path d="M30 19l9 6.5-3.4 10.6H24.4L21 25.5z" fill="#1B1630"/><path d="M30 19V5M39 25.5l12.5-4.2M35.6 36.1l7.6 10.8M24.4 36.1l-7.6 10.8M21 25.5 8.5 21.3" stroke="#1B1630" stroke-width="2.5"/></svg>
+        </button>
+        <p class="campo__gol" id="gol" aria-live="polite"></p>
+        <p class="campo__hint"><i class="ph-bold ph-arrows-out-cardinal"></i> <span data-i18n="part.hint">Tira del balón y suelta</span></p>
+      </div>
+
+      <figure class="pantalla" id="pantalla">
+        <div class="pantalla__frame">
+          <video id="pVideo" playsinline muted loop preload="none"></video>
+          <button class="pantalla__sound" id="pSound" type="button" aria-pressed="false"><i class="ph-bold ph-speaker-slash"></i><span data-i18n="part.sound">Sonido</span></button>
+        </div>
+        <figcaption class="pantalla__cap">
+          <p class="pantalla__date" id="pDate"></p>
+          <p class="pantalla__title" id="pTitle"></p>
+          <p class="pantalla__tags" id="pTags"></p>
+        </figcaption>
+        <div class="pantalla__nav">
+          <button type="button" class="round" id="pPrev" aria-label="Vídeo anterior" data-i18n-attr="aria-label:part.prev"><i class="ph-bold ph-arrow-left"></i></button>
+          <button type="button" class="round" id="pNext" aria-label="Vídeo siguiente" data-i18n-attr="aria-label:part.next"><i class="ph-bold ph-arrow-right"></i></button>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ RESEÑAS ============ -->
+  <section class="resenas" id="resenas">
+    <div class="wrap resenas__grid">
+      <div class="resenas__score fade">
+        <p class="kicker" data-i18n="res.kicker">Reseñas en Google</p>
+        <p class="resenas__big" data-i18n="res.big">4,6</p>
+        <p class="resenas__stars" aria-label="4,6 de 5 estrellas" data-i18n-attr="aria-label:res.stars"><span aria-hidden="true">★★★★★</span></p>
+        <p class="resenas__n" data-i18n="res.n">84 reseñas</p>
+      </div>
+      <blockquote class="quote fade"><p data-i18n="res.q1">«Lugar muy buena vista, paella deliciosa, nachos también, ensalada griega. Servicio amable.»</p><cite data-i18n="res.citeLg">Reseña en Google · Local Guide</cite></blockquote>
+      <blockquote class="quote fade"><p data-i18n="res.q2">«La comida muy correcta, servicio rápido, tiene terraza y está al lado de la playa.»</p><cite data-i18n="res.citeLg">Reseña en Google · Local Guide</cite></blockquote>
+      <blockquote class="quote fade"><p data-i18n="res.q3">«Un lugar muy bueno, muy limpio, los camareros muy agradables. Un sitio para pasarlo muy bien.»</p><cite data-i18n="res.cite">Reseña en Google</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- ============ VISITA ============ -->
+  <section class="visita" id="visita">
+    <div class="wrap visita__grid">
+      <div class="visita__copy">
+        <p class="kicker" data-i18n="vis.kicker">Cómo llegar</p>
+        <h2 class="h2">Passeig d’Agustí <em>Font</em>, 6</h2>
+        <p class="lead" data-i18n="vis.lead">En el paseo marítimo de Lloret de Mar, delante de la playa, cerca de la Plaça de la Torre y del Museu del Mar.</p>
+        <dl class="visita__dl">
+          <div><dt data-i18n="vis.hours">Horario</dt><dd data-i18n="vis.hoursV">Todos los días · 10:00 – 1:30</dd></div>
+          <div><dt data-i18n="vis.phone">Teléfono</dt><dd><a href="tel:+34674985961">674 98 59 61</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/kikos_lloret/" target="_blank" rel="noopener">@kikos_lloret</a></dd></div>
+          <div><dt data-i18n="vis.addr">Dirección</dt><dd>Passeig d’Agustí Font, 6 · 17310 Lloret de Mar</dd></div>
+        </dl>
+        <p class="live live--dark" data-live><i></i><span data-live-text>Todos los días · 10:00 – 1:30</span></p>
+        <div class="visita__btns">
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Kikos%20bar%20restaurant%20Lloret%20de%20Mar&amp;query_place_id=ChIJ6x3iYjoXuxIREQP1VsND4lU" target="_blank" rel="noopener"><i class="ph-bold ph-navigation-arrow"></i><span data-i18n="vis.maps">Abrir en Google Maps</span></a>
+          <a class="btn btn--ghost" href="tel:+34674985961"><i class="ph-bold ph-phone"></i><span data-i18n="vis.call">Llamar</span></a>
+        </div>
+      </div>
+      <div class="visita__map" id="mapa">
+        <button class="mapa__load" id="mapaLoad" type="button">
+          <svg viewBox="0 0 400 300" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="300" fill="#EAE1D3"/>
+            <path d="M0 196c60-10 120-28 200-30s150 10 200 0v134H0z" fill="#9FC6D8"/>
+            <path d="M0 186c60-10 120-28 200-30s150 10 200 0" fill="none" stroke="#E7D4B0" stroke-width="16"/>
+            <path d="M0 174c60-10 120-28 200-30s150 10 200 0" fill="none" stroke="#fff" stroke-width="5"/>
+            <g stroke="#fff" stroke-width="3" fill="none"><path d="M40 0v150M120 0v138M210 0v134M300 0v140M0 60h400M0 112h400"/></g>
+            <circle cx="208" cy="132" r="9" fill="#EF6F5C" stroke="#fff" stroke-width="3"/>
+          </svg>
+          <span><i class="ph-bold ph-map-pin"></i><b data-i18n="vis.mapLoad">Cargar el mapa de Google</b></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__neon" aria-hidden="true"><span>Restaurant</span> <b>Kiko’s</b> <span>Bar Cocktails</span></p>
+  <div class="foot__row">
+    <span>Kiko’s · Restaurant &amp; Bar Cocktails · Passeig d’Agustí Font, 6 · Lloret de Mar · <a href="tel:+34674985961">674 98 59 61</a></span>
+    <span data-i18n="foot.photos">Fotos y vídeos: Instagram <a href="https://www.instagram.com/kikos_lloret/" target="_blank" rel="noopener">@kikos_lloret</a> y clientes en Google Maps</span>
+    <div class="langs foot__langs" data-lang-list></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
